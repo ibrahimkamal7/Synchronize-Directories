@@ -1,0 +1,8 @@
+synchronize: synchronize.o
+	gcc synchronize.o -o synchronize
+
+synchronize.o: synchronize.c
+	gcc -c synchronize.c
+
+clean:
+	rm -f synchronize *.o
